@@ -1,0 +1,90 @@
+.circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+
+    border-radius: 500px;
+    border: solid 1px var(--white);
+
+    right: -230px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    animation: ani 0.5s forwards;
+}
+@keyframes ani {
+    0% {
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0deg);
+        opacity: 1;
+    }
+}
+.svg {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+}
+.line {
+    display: flex;
+    position: absolute;
+    width: 250px;
+    transition: transform 0.4s; 
+}
+.a {
+    transform-origin: right;
+    transform: translate(-100%, -0%);
+    margin-left: -32px;
+}
+.a p6 {
+    position: relative;
+    display: inline-block;
+    color: var(--white);
+    transition: 
+        font-size 0.2s,
+        font-weight 0.2s
+        ;
+}
+.a p6:hover {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;/* 33.6px */
+}
+.a-active {
+
+    transform-origin: right;
+    transform: translate(-100%, -0%);
+    margin-left: -32px;
+}
+.a-active p6 {
+    position: relative;
+    display: inline-block;
+    color: var(--white);
+    transition: 
+        font-size 0.2s,
+        font-weight 0.2s
+        ;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.59px;
+}
+
+.ball {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    background-color: var(--white);
+    transition: background-color 0.3s;
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    transform: translate(-50%, 0%);
+    transform-origin: center;
+}

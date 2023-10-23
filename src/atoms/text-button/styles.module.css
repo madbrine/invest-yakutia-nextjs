@@ -1,0 +1,32 @@
+.text {
+    border: none;
+    background: none;
+    color: var(--white);
+    transition: color 0.2s;
+}
+.text:hover {
+    color: var(--red)
+}
+
+.outlined {
+    padding: 13px 35px;
+    background: none;
+    border: solid 1px var(--red);
+    color: var(--red);
+    transition: color 0.2s, background 0.2s;
+}
+.outlined:hover {
+    background: var(--red);
+    color: var(--white);
+}
+.contained {
+    padding: 13px 35px;
+    background: var(--red);
+    color: var(--white);
+    border: solid 1px var(--red);
+    transition: color 0.2s, background 0.2s;
+}
+.contained:hover {
+    color: var(--red);
+    background: none;
+}

@@ -1,0 +1,19 @@
+.container {
+    width: 200px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h3 {
+    color: var(--red);
+    margin-bottom: 2px;
+}
+.container h6 {
+    margin-bottom: 5px;
+}
+.container p4 {
+    text-align: center;
+}
+

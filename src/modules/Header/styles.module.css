@@ -1,0 +1,43 @@
+.container {
+    padding: 
+        22px var(--side-paddings)
+        22px var(--side-paddings);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+    background: var(--dark-blue);
+}
+
+.menu-button {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.menu-button-active {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.menu-button-line-1, .menu-button-line-3 {
+    background-color: var(--white);
+    height: 3px;
+    margin-bottom: 7px;
+    transition: transform 0.3s;
+}
+.menu-button-line-2 {
+    background-color: var(--white);
+    height: 3px;
+    margin-bottom: 7px;
+    transition: transform 0.2s;
+}
+.menu-button-active .menu-button-line-1 {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+.menu-button-active .menu-button-line-2 {
+    transform: scaleY(0);
+}
+.menu-button-active .menu-button-line-3 {
+    transform: rotate(-45deg) translate(7px, -7px);
+}

@@ -1,0 +1,10 @@
+.container {
+    padding:
+        80px var(--side-paddings)
+        80px var(--side-paddings);
+        background-color: var(--dark-blue);
+}
+.container h2 {
+    color: var(--white);
+    margin-bottom: 50px;
+}

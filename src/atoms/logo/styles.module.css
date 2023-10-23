@@ -1,0 +1,7 @@
+.logo-svg {
+    transition: filter 0.5s;
+}
+
+.logo-svg:hover {
+    filter: url(#glow);
+}

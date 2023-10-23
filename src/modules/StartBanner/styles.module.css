@@ -1,0 +1,62 @@
+.container {
+    aspect-ratio: 18 / 8;
+    border-bottom: solid 1px #000;
+    background-color: gray;
+
+    padding: 0px var(--side-paddings) 0px var(--side-paddings);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-box {
+    width: 650px;
+    transform: translateX(-150%);
+    animation: ani 0.5s forwards;
+}
+.box {
+    width: 1300px;
+    margin-top: -200px;
+}
+.text-box h1 {
+    color: var(--white);
+}
+.header-tik {
+    color: var(--white);
+    position: absolute;
+    animation: anim-tik 0.25s forwards;
+    width: 1300px;
+}
+.header-tak {
+    color: var(--white);
+    position: absolute;
+    animation: anim-tak 0.25s forwards;
+    width: 1300px;
+}
+@keyframes anim-tik {
+    0% {
+        margin-top: -300px; /* Начальное положение за пределами экрана вверху */
+        opacity: 0; /* Начальная непрозрачность */
+    }
+    100% {
+        margin-top: 0px; /* Конечное положение (вверху) для нового заголовка */
+        opacity: 1; /* Плавное появление нового заголовка */
+    }
+}
+@keyframes anim-tak {
+    0% {
+        margin-top: 0px; /* Начальное положение за пределами экрана вверху */
+        opacity: 1; /* Начальная непрозрачность */
+    }
+    100% {
+        margin-top: 300px; /* Конечное положение (вверху) для нового заголовка */
+        opacity: 0; /* Плавное появление нового заголовка */
+    }
+}
+@keyframes ani {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
